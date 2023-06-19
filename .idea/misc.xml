@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ASMSmaliIdeaPluginConfiguration">
+    <asm skipDebug="true" skipFrames="true" skipCode="false" expandFrames="false" />
+    <groovy codeStyle="LEGACY" />
+  </component>
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
@@ -15,6 +19,17 @@
         <entry key="..\:/Users/AritraLappy/AndroidStudioProjects/GreenToBlue/app/src/main/res/layout/listviewitem_chunk.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/AritraLappy/AndroidStudioProjects/GreenToBlue/app/src/main/res/layout/listviewitem_directory.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/AritraLappy/AndroidStudioProjects/GreenToBlue/app/src/main/res/layout/listviewitem_participant.xml" value="0.35052083333333334" />
+        <entry key="..\:/android/sdk/platforms/android-30/data/res/drawable/btn_default.xml" value="0.33125" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/drawable/selectCard.xml" value="0.33125" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/drawable/share_vector.xml" value="0.33125" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/layout/activity_chat_export.xml" value="0.25" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/layout/dialog_fb_my_name.xml" value="0.17083333333333334" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/layout/dialog_select_directory.xml" value="0.3151041666666667" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/layout/listviewitem_chat_metadata.xml" value="0.3151041666666667" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/layout/listviewitem_chunk.xml" value="0.35450236966824644" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/layout/listviewitem_directory.xml" value="0.3151041666666667" />
+        <entry key="..\:/android/workspace/GreenToBlue/app/src/main/res/layout/listviewitem_participant.xml" value="0.3151041666666667" />
       </map>
     </option>
   </component>

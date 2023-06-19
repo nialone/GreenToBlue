@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">Green To Blue</string>
+    <string name="fileAttached">(file attached)</string>
+    <string name="makingChunks">Making Chunks…</string>
+    <string name="chunk1">%d msg, with %d media files</string>
+    <string name="chunk2">%d msg, %d media - %d found.</string>
+    <string name="makeExportChunks">Make Export Chunks</string>
+    <string name="done">Done!</string>
+    <string name="groupName">Group Name</string>
+    <string name="participantName">Participant Name</string>
+    <string name="myName">My Name:</string>
+    <string name="participants">Participant:</string>
+    <string name="save_participant_names">Save Participant Names</string>
+    <string name="chunk_media_count">Chunk Media Count:</string>
+    <string name="chunk_media_size">Chunk Media Size:</string>
+    <string name="chunk_num">num:%d</string>
+    <string name="wawith">WhatsApp Chat with %s.txt</string>
+    <string name="begin_chunk">"%s - Green to Blue: BEGINNING OF CHUNK %d\n"</string>
+    <string name="end_chunk">"%s - Green to Blue: ENDING OF CHUNK %d\n"</string>
+    <string name="media_no_found">"%s - %s: &lt;Media Not Found&gt;</string>
+    <string name="msg_deleted">You deleted this message</string>
+    <string name="scan_media_first">Please Scan Media First!</string>
+    <string name="scanning">Scanning…</string>
+    <string name="scanned_media_files">Scanned %d Media Files!</string>
+    <string name="scan_media">Scan Media</string>
+    <string name="media_folder">Media Folder</string>
+    <string name="scan_db">Scan DB</string>
+    <string name="skip_empty_media">Skip empty media messages</string>
+    <string name="full_clear">Clear DB</string>
+    <string name="disable_all_media">Disable all media files (use only text)</string>
 </resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Green To Blue</string>
+    <string name="fileAttached">(файл добавлен)</string>
+    <string name="makingChunks">Собираю части…</string>
+    <string name="chunk1">%d сбщ, с %d медиафайлами</string>
+    <string name="chunk2">%d сбщ, %d медиа - %d найдено.</string>
+    <string name="makeExportChunks">Собрать экспорт</string>
+    <string name="done">Готово!</string>
+    <string name="myName">Мое имя:</string>
+    <string name="participantName">Имя участника:</string>
+    <string name="groupName">Имя группы:</string>
+    <string name="participants">Участники:</string>
+    <string name="save_participant_names">Сохранить имена участников</string>
+    <string name="chunk_media_count">Количество медиа:</string>
+    <string name="chunk_media_size">Размер медиа:</string>
+    <string name="chunk_num">часть %d</string>
+    <string name="wawith">Чат WhatsApp с %s.txt</string>
+    <string name="begin_chunk">"%s - Green to Blue: Часть %d (начало)\n"</string>
+    <string name="end_chunk">"%s - Green to Blue: Часть %d (конец)\n"</string>
+    <string name="media_no_found">"%s - %s: &lt;Медиа Отсутствует&gt;</string>
+    <string name="msg_deleted">Вы удалили данное сообщение</string>
+    <string name="scan_media_first">Сначала отсканируйте медиа папку!</string>
+    <string name="scan_media">Скан Медиа</string>
+    <string name="scanning">Поиск…</string>
+    <string name="scanned_media_files">Найдено %d медиафайлов!</string>
+    <string name="media_folder">Папка Медиа</string>
+    <string name="scan_db">Скан Базы</string>
+    <string name="skip_empty_media">Пропускать пустые медиа сообщения</string>
+    <string name="full_clear">Очистка Базы</string>
+    <string name="disable_all_media">Отключить ВСЕ медиа (только текст)</string>
+</resources>

@@ -12,10 +12,8 @@ android {
         applicationId "org.marvin.greentoblue"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        versionCode 2
+        versionName "1.1"
     }
 
     buildTypes {

@@ -1,136 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    tools:context=".ChatExportActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="0"
-        android:padding="10dp">
-        <TextView
-            android:layout_width="0px"
-            android:layout_height="wrap_content"
-            android:text="My Name"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:textSize="12sp"
-            android:layout_weight=".5"/>
-        <EditText
-            android:id="@+id/editTxtMyName"
-            android:layout_width="0px"
-            android:layout_height="wrap_content"
-            android:tooltipText="Your Name In Chat"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:layout_weight="1.5"/>
-    </LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        tools:context=".ChatExportActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="0"
-        android:padding="10dp">
-        <TextView
-            android:id="@+id/txtChatHeader"
-            android:layout_width="0px"
-            android:layout_height="wrap_content"
-            android:text="Participant Name"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:textSize="12sp"
-            android:layout_weight=".5"/>
-        <EditText
-            android:id="@+id/editTxtChatName"
-            android:layout_width="0px"
-            android:layout_height="wrap_content"
-            android:tooltipText="Chat Header"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:layout_weight="1.5"/>
-    </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layoutParticipantBLock"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/txtParticipants"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="Participants"
-            android:textSize="12sp"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="5dp" />
+            android:layout_weight="0"
+            android:orientation="horizontal">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/lstParticipants"
+            <TextView
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:text="@string/myName"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/editTxtMyName"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:tooltipText="Your Name In Chat" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constrainedHeight="true"
-            app:layout_constraintHeight_max="300dp"
-            android:layout_margin="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtParticipants"
-            tools:listitem="@layout/listviewitem_participant"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_weight="0"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btnSaveParticipants"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_margin="5dp"
-        android:text="Save Participant Names"
-        style="?android:attr/buttonBarButtonStyle"/>
+            <TextView
+                android:id="@+id/txtChatHeader"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight=".5"
+                android:text="@string/participantName"
+                android:textSize="12sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="0"
-        android:padding="10dp">
-        <TextView
-            android:layout_width="0px"
+            <EditText
+                android:id="@+id/editTxtChatName"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:tooltipText="Chat Header" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutParticipantBLock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/participants"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/lstParticipants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHeight_max="300dp"
+                app:layout_constraintTop_toBottomOf="@+id/txtParticipants"
+                tools:listitem="@layout/listviewitem_participant" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btnSaveParticipants"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chunk Size "
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:layout_weight=".5"/>
-        <EditText
-            android:id="@+id/editTxtChunkSize"
-            android:layout_width="0px"
+            android:text="@string/save_participant_names"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbDisableAllMedia"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:tooltipText="Maximum Number Of Media In Each Export"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
-            android:text="@={chunkSize}"
-            android:inputType="number"
-            android:layout_weight=".5"/>
+            android:text="@string/disable_all_media"/>
+
+        <CheckBox
+            android:id="@+id/cbSkipEmptyMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/skip_empty_media"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/chunk_media_count" />
+
+            <EditText
+                android:id="@+id/editTxtChunkCountSize"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="@={chunkSize}"
+                android:tooltipText="Maximum Number Of Media In Each Export" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/chunk_media_size" />
+
+            <EditText
+                android:id="@+id/editTxtChunkMediaSize"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="number"
+                android:tooltipText="Maximum Size Of Media In Each Export" />
+        </LinearLayout>
+
+
         <Button
             android:id="@+id/btnMakeChunks"
-            android:layout_width="0px"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Make Export Chunks"
-            android:layout_margin="5dp"
-            android:layout_gravity="center"
+            android:text="@string/makeExportChunks" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lstChunks"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
             android:layout_weight="1"
-            style="?android:attr/buttonBarButtonStyle"/>
+            tools:listitem="@layout/listviewitem_chunk" />
+
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lstChunks"
-        android:layout_width="match_parent"
-        android:layout_height="0px"
-        android:layout_margin="5dp"
-        android:layout_weight="1"
-        tools:listitem="@layout/listviewitem_chunk"/>
-</LinearLayout>
+</ScrollView>

@@ -11,3 +11,5 @@ data class ChunkDataModel (
     var data: ByteArray = byteArrayOf(),
     val mediaURI: ArrayList<Uri> = arrayListOf()
 )
+
+

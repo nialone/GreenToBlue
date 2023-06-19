@@ -3,8 +3,9 @@ package org.marvin.greentoblue.models
 import android.net.Uri
 import java.sql.Timestamp
 
-data class ChatDataModel (
+data class ChatDataModel(
     val chatID : String,
+    val chatType: Int = 0,
     val timestamp : Timestamp,
     val chatData : String,
     val chatFromMe : Boolean = false,
